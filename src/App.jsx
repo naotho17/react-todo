@@ -5,11 +5,12 @@ import { InCompleteTodos } from "./components/IncompleteTodos";
 import { CompleteTodos } from "./components/CompleteTodos";
 
 export const App = () => {
-  //入力した文字のstate.最初は空なので""にしておく
+  // Stateたち
+  //①入力した文字のstate.最初は空なので""にしておく
   const [todoText, setTodoText] = useState("");
-  //未完了のTODOのstate
+  //②未完了のTODOのstate
   const [incompleteTodos, setIncompleteTodos] = useState(["未完了のタスク"]);
-  //完了したTODOのstate
+  //③完了したTODOのstate
   const [completeTodos, setCompleteTodos] = useState(["完了済のタスク"]);
 
   //タスクの追加機能
