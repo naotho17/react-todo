@@ -42,16 +42,6 @@ li p {
   margin-right: 8px;
 }
 
-/*  imput-area*/
-.input-area {
-  background-color: #c1ffff;
-  width: 400px;
-  height: 30px;
-  padding: 8px;
-  margin: 8px;
-  border-radius: 8px;
-}
-
 /* imcomplete-area*/
 .incomplete-area {
   background-color: #c6ffe2;

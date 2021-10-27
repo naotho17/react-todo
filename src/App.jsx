@@ -54,7 +54,14 @@ export const App = () => {
         todoText={todoText}
         onChange={onChangeTodoText}
         onClick={onClickAdd}
+        disabled={incompleteTodos.length >= 5}
       />
+
+      {/* Todoが5個以上たまると下記が表示される機能 */}
+      {incompleteTodos.length >= 5 && (
+        <p style={{ color: "red" }}>登録できるtodoは5個までだよ。消化しろ！</p>
+      )}
+
       {/* incomplete-areaをコンポ―ネント化 */}
       <InCompleteTodos
         todos={incompleteTodos}
